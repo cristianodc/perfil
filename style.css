@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --cor-primaria: #0077cc;
+  --cor-fundo: #121111;
+  --cor-link: #eddb12;
+  --cor-sombra:rgba(7, 7, 7, 0.562) 0px 5px 10px;
+  --fonte: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+header{
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-around;
+ background-color: var(--cor-fundo);
+ padding-left: 1rem;
+ padding-bottom: 0.5rem;
+ border-radius: 5px;
+ color: var(--cor-link);
+}
+.foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foto img{
+
+    padding-top: 0.3rem;
+    width: 115px;
+    height: 145px;
+    border-radius: 15px;
+    
+}
+nav{
+    display: flex;
+    gap: 1rem;
+    margin-right: 4rem;
+    height: inherit;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cor-link);
+
+}
+main{
+    margin-top:  0.5rem;
+    display: flex;
+     
+}
+.title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.title::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin:  2px auto;
+
+}
+.section-1{
+    width: 50%;
+    border-right: 0.1rem solid;
+    padding: 15px;
+}
+.section-2{
+    width: 50%;
+    padding: 15px;
+}
+.section-1,.section-2{
+
+     box-shadow:var(--cor-sombra);
+     border-radius: 8px;
+     
+}
+.habilidades ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.habilidades ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.habilidades ul li:hover{
+    color: #171616; text-shadow: 0 0 0.2em rgb(33, 33, 33), 0 0 0.2em rgb(217, 220, 29);
+text-decoration:dotted;
+}
+.logo-habilidade{
+    display: flex;
+    margin-bottom: 0.3rem;
+    width: 50%;
+    justify-content: center;
+}
+.habilidades ul li h5{
+    width: 50%;
+   
+}
+.logo-habilidade img{
+    width: 32px;
+
+}
+
+.descricao{
+   text-align: justify;
+   margin: 0.5rem;
+   font-size: 16px;
+
+   
+}
+.experiencia , .descricao{
+    text-align: justify;
+   
+   margin: 0.5rem;
+   font-size: 18px;
+}
+
+/*
+.section-1:hover ,.section-2:hover{
+box-shadow:var(--cor-sombra)
+}*/
+
+
+.contato{
+    margin-top: 2rem;
+}
+.contato ul{
+   list-style: none;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.contato ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contato ul li h5{
+    width: 50%;
+    font-size: 18px;
+}
+.logo-contato{
+    display: flex;
+    margin-bottom: 0.3rem;
+    width: 50%;
+    justify-content: center;
+}
+.logo-contato img{
+    width: 32px;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+   
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+footer a{
+    margin-left: 1.5rem;
+}
+footer img{
+    width: 42px;
+}
