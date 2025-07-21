@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   /* box-sizing: border-box;*/
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 :root {
-  --cor-primaria: #0077cc;
+  --cor-primaria: #0e8de7a1;
   --cor-fundo: #121111;
   --cor-link: #eddb12;
   --cor-sombra:rgba(7, 7, 7, 0.562) 0px 5px 10px;
@@ -15,18 +16,19 @@ body{
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
   
 }
 header{
  display: flex;
  flex-direction: row;  
  justify-content: space-around;
- background-color: var(--cor-fundo);
+ background: var(--cor-fundo);
  padding-left: 1rem;
  padding-bottom: 0.5rem;
  border-radius: 5px;
- color: var(--cor-link);
+ color: var(--cor-link)
+  
 }
 .foto{
     display: flex;
@@ -116,7 +118,7 @@ text-decoration:dotted;
    
 }
 .logo-habilidade img{
-    width: 32px;
+    width: 24px;
 
 }
 
@@ -127,19 +129,9 @@ text-decoration:dotted;
 
    
 }
-.experiencia , .descricao{
-    text-align: justify;
-   
-   margin: 0.5rem;
-   font-size: 18px;
+.experiencia{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-/*
-.section-1:hover ,.section-2:hover{
-box-shadow:var(--cor-sombra)
-}*/
-
-
 .contato{
     margin-top: 2rem;
 }
@@ -165,7 +157,7 @@ box-shadow:var(--cor-sombra)
     justify-content: center;
 }
 .logo-contato img{
-    width: 32px;
+    width: 24px;
 }
 footer{
     display: flex;
@@ -181,5 +173,34 @@ footer a{
     margin-left: 1.5rem;
 }
 footer img{
-    width: 42px;
+    width: 32px;
+}
+
+@media screen and (max-width: 894px) {
+	.contato ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+}
+@media screen and (max-width: 894px) {
+header{
+ display:flex;
+ flex-direction: column;  
+
+}
+nav{
+    display: flex;
+    gap: 1rem;
+    margin-left: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media screen and (max-width: 646px) {
+	.contato ul li h5{
+     overflow-wrap: break-word;
+    }
+
 }
