@@ -9,7 +9,7 @@
   --cor-fundo: #121111;
   --cor-header: rgb(216, 201, 30);
   --cor-sombra:rgba(7, 7, 7, 0.562) 0px 5px 10px;
-  --fonte: 'Roboto', sans-serif;
+  
 }
 body{
     display: flex;
