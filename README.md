@@ -12,7 +12,7 @@
 * * CSS3: para estilização do layout
   * Pseudo-classes(:hover) e (::before) para interatividade
   * Media queries para adaptação e responsividade
-  * Layout com flexbox
+  * html Layout com flexbox
 * Html 5 para estruturação do conteúdo
 * Gogole Fonts: Concert One
 
