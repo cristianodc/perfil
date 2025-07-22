@@ -1,5 +1,5 @@
 # Objetivo: Página de Perfil Pessoal
-### O Repositorio contém uma pagina em Html e CSS com informações básicas minhas, uma seção sobre min, habildades , contato e futuramente projetos desenvolvidos.
+### O Repositório contém uma pagina em Html e CSS com informações básicas minhas, uma seção sobre min, habildades , contato e futuramente projetos desenvolvidos.
 ****
 # Como foi desenvolvido:<br>
 * A pagina se adapta a diferentes tamanhos de telas, é responsivo:
