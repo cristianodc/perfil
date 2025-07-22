@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-   /* box-sizing: border-box;*/
+    box-sizing: border-box;
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 :root {
-  --cor-primaria: #0e8de7a1;
+  
   --cor-fundo: #121111;
-  --cor-link: #eddb12;
+  --cor-header: rgb(216, 201, 30);
   --cor-sombra:rgba(7, 7, 7, 0.562) 0px 5px 10px;
   --fonte: 'Roboto', sans-serif;
 }
@@ -16,10 +16,14 @@ body{
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-  
-  
+ }
+ .concert-one-regular {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 header{
+border-top: 20px;
  display: flex;
  flex-direction: row;  
  justify-content: space-around;
@@ -27,7 +31,7 @@ header{
  padding-left: 1rem;
  padding-bottom: 0.5rem;
  border-radius: 5px;
- color: var(--cor-link)
+ color: var(--cor-header)
   
 }
 .foto{
@@ -40,8 +44,9 @@ header{
 
     padding-top: 0.3rem;
     width: 115px;
-    height: 145px;
-    border-radius: 15px;
+    height: 128px;
+    border-radius: 10px;
+    padding-bottom: 0.3rem;
     
 }
 nav{
@@ -55,9 +60,33 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: var(--cor-link);
+    color: yellow;
 
 }
+nav .link{
+    position: relative;
+   transition: all .8s; 
+}
+
+nav .link:hover{
+    /*color: var(--cor-header);*/
+}
+nav .link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: tomato;
+    transition: width .8s;
+}
+nav .link:hover::before,
+nav .link.active::before{
+    width: 100%;
+   
+}
+
 main{
     margin-top:  0.5rem;
     display: flex;
@@ -104,8 +133,9 @@ main{
     
 }
 .habilidades ul li:hover{
-    color: #171616; text-shadow: 0 0 0.2em rgb(33, 33, 33), 0 0 0.2em rgb(217, 220, 29);
+    color: #431b1b; text-shadow: 0 0 0.2em rgb(33, 33, 33), 0 0 0.2em rgb(217, 220, 29);
 text-decoration:dotted;
+
 }
 .logo-habilidade{
     display: flex;
@@ -118,7 +148,7 @@ text-decoration:dotted;
    
 }
 .logo-habilidade img{
-    width: 24px;
+    width: 28px;
 
 }
 
@@ -132,6 +162,7 @@ text-decoration:dotted;
 .experiencia{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .contato{
     margin-top: 2rem;
 }
@@ -148,7 +179,7 @@ text-decoration:dotted;
 }
 .contato ul li h5{
     width: 50%;
-    font-size: 18px;
+    font-size: 16px;
 }
 .logo-contato{
     display: flex;
@@ -202,5 +233,16 @@ nav{
 	.contato ul li h5{
      overflow-wrap: break-word;
     }
+main{
+    flex-direction: column;
+   
+}
+.section-1, .section-2{
+    width: 100%;
+    border: none;
+}
+footer{
+    flex-direction: column;
+}
 
 }

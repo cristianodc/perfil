@@ -7,7 +7,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+
+
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
    
 </head>
@@ -15,14 +18,15 @@
 
     <header>
         <div class="foto">
-            <img src="img/foto-perfil.jpg" width="130px" alt="eu">
-            <h4>Cristiano Dornelles Coffy</h4>
+            <img src="img/eu.png" width="130px" alt="eu">
+            <h4 class="concert-one-regular">Cristiano Dornelles Coffy</h4>
+            <h4 class="concert-one-regular">Dev Full Stack Jr.</h4>
 
         </div>
         <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#habilidade">Habilidades</a>
-            <a href="">Contato</a>
+            <a href="#sobre" class="link active concert-one-regular">Sobre</a>
+            <a href="#habilidade" class="link  concert-one-regular" >Habilidades</a>
+            <a href="#contato" class="link concert-one-regular">Contato</a>
 
         </nav>
     </header>
@@ -41,35 +45,43 @@
                      com previsão de termino em Dezembro de 2025.
                 </p>
           </div>
-           <div class="experiencia">
-                 <h3 class="title">Formação Acadêmica </h3>
-                 
-                 <p class="descricao">
-                   <strong>Técnologo em analise de sistemas</strong>- Universidade Luterana do Brasil (ULBRA)-2013
-                 </p>
-                  <h3 class="title">Cursos </h3>
-                    <p class="descricao"><strong>Dev. Full Stack Jr.</strong>-+praTi & Codifica (Previsão de conclusão. Dez 2025) </p>
-                
-
+           <div class="contato" id="contato">
+                 <h3 class="title">Contato</h3>
+                <ul>
+                    <li>
+                        <div class="logo-contato">
+                            <img src="img/house.png" alt="Casa">
+                        </div>
+                        <h5>Canoas - RS</h5>
+                    </li>
+                    <li>
+                        <div class="logo-contato">
+                            <img src="img/gmail.png" alt="email">
+                           
+                        </div>
+                         <h5>cristianocoffy@gmail.com</h5>
+                        
+                    </li>
+                </ul>
            </div>
         </section>
         <section class="section-2" id="habilidade">
             <div class="habilidades">
                 <h3 class="title">Habilidades em desenvolvimento</h3>
                 <ul>
-                    <li>
+                    <li class="habilidade_lista">
                         <div class="logo-habilidade">
                            <img src="img/css.png">                            
                         </div>
                          <h5>CSS3</h5>
                     </li>
-                    <li>
+                    <li class="habilidade_lista">
                         <div class="logo-habilidade">
                            <img src="img/html-5.png">                            
                         </div>
                          <h5>HTML5</h5>
                     </li>
-                     <li>
+                     <li class="habilidade_lista">
                         <div class="logo-habilidade">
                            <img src="img/script-java.png">                            
                         </div>
@@ -108,23 +120,7 @@
                 </ul>
           </div>
           <div class="contato">
-                <h3 class="title">Contato</h3>
-                <ul>
-                    <li>
-                        <div class="logo-contato">
-                            <img src="img/house.png" alt="Casa">
-                        </div>
-                        <h5>Canoas - RS</h5>
-                    </li>
-                    <li>
-                        <div class="logo-contato">
-                            <img src="img/gmail.png" alt="email">
-                           
-                        </div>
-                         <h5>cristianocoffy@gmail.com</h5>
-                        
-                    </li>
-                </ul>
+               
           </div>
         </section>
        
@@ -133,12 +129,12 @@
      <footer>
           <p>&copy; 2025 Cristiano Dornelles Coffy. Todos os direitos reservados.</p>
            <div class="redes">
+             <a href="https://www.instagram.com/cristiano_coffy" >
+                <img src="img/instagram.png"></a>
             <a href="https://www.linkedin.com/in/cristianocoffy/" target="_blank">
                 <img src="img/linkedin.png">
             </a>
-            <a href="https://www.instagram.com/cristiano_coffy" target="_blank">
-                <img src="img/instagram.png">
-            </a>
+           
            </div>
      </footer>
     
